@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About</title>
-  <link rel="stylesheet" href="vars.css">
-  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="./styles/tokens.css">
+  <link rel="stylesheet" href="./styles/global.css">
   <!--
     FLOAT
     float: left shifts the figure to one side and takes it out of normal
@@ -45,6 +45,21 @@
   </style>
 </head>
 <body>
+  <header>
+      <h1>The CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <p>Navigation Menu</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="./guide/index.html">Cheese Guide</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+  </nav>
+
+  <main>
   <h1>About The CSE Cheese Society</h1>
   <p>The CSE Cheese Society was founded in 2024, when a seminar ended
       early and a cheese plate did not. What began as an argument over the
@@ -65,9 +80,6 @@ No experience required. Strong opinions optional but traditional.</p>
     <figure>
       <figcaption>Meet the Board</figcaption>
     </figure>
-    <p>Before flexbox and grid, floats were how the web did columns. A floated box is shifted to one side and removed from normal flow; the text that follows shortens its lines to run alongside it.</p>
-    <p>Keep reading and the lines keep wrapping. This figure is taller than all three paragraphs, so every line stays narrow — text only returns to full width once it passes the bottom of a float.</p>
-    <p>Floats were designed for exactly this — images in running text — which is why using them for whole page layouts always felt like a workaround.</p>
     <details>
       <summary>Casey Rennet — Founding Chair</summary>
       <p>
@@ -96,8 +108,8 @@ No experience required. Strong opinions optional but traditional.</p>
     </details>
   </article>
 
-  <footer>
-    <p>Footer — <code>clear: both</code> makes this start below the float. Delete that one line and this footer slides up beside the figure.</p>
-  </footer>
+  </main>
+
+  <footer>Copyright 2026 <a href="https://github.com/JaneenTai/CSE134_HW4">The CSE Cheese Society</a>. Cheese responsibly.</footer>
 </body>
 </html>

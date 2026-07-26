@@ -2,7 +2,9 @@
   @view-transition { navigation: auto; }
 }
 
-header h1 {
+header figure {
+  width: 4rem;
+  height: 4rem;
   /*content: url("../images/logo.svg");*/
 }
 

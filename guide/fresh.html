@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fresh</title>
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/global.css">
+  <!--
+    GRID PAGE SCAFFOLD
+    The same header/main/footer page as demo 06, built with grid instead.
+    grid-template-areas names the rows so the CSS reads like a sketch of
+    the page; each region claims its slot with grid-area. Rows are
+    auto 1fr auto: natural height at the edges, main takes the rest.
+  -->
+  <style>
+    body {
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      min-height: 100svh;
+
+      > header {
+        grid-area: header;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+      }
+
+      > main {
+        grid-area: main;
+        padding: var(--space-3);
+      }
+
+      > footer {
+        grid-area: footer;
+        padding: var(--space-2) var(--space-3);
+        border-block-start: var(--border);
+        background: var(--panel);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The CSE Cheese Society</h1>
+  </header>
+
+  <nav>
+    <p>Navigation Menu</p>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="index.html">Cheese Guide</a></li>
+      <li><a href="../join.html">Join</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Fresh cheeses</h2>
+    <p>Young, moist, and mild. Fresh cheeses skip aging entirely: the curds
+are drained, maybe lightly salted, and sent straight to the table.
+They taste of milk itself, which is the whole point.</p>
+    <p>Character: soft, spreadable or springy, high in moisture. Flavors are
+delicate — milky, lemony, faintly sweet. There is nowhere for a flaw
+to hide, so freshness is everything.</p>
+    <p>Notable members: mozzarella, ricotta, chevre, queso fresco, and
+mascarpone.</p>
+    <p>How to enjoy: eat within days. Tear mozzarella over tomatoes, spoon
+ricotta onto toast with honey, crumble chevre into a salad. Fresh
+cheese belongs to summer.</p>
+    <p>Did you know? Real mozzarella di bufala is made from the milk of
+water buffalo, whose herds were brought to Italy over a thousand
+years ago.</p>
+  </main>
+
+  <footer>Copyright 2026 <a href="https://github.com/JaneenTai/CSE134_HW4">The CSE Cheese Society</a>. Cheese responsibly.</footer>
+</body>
+</html>
