@@ -1,0 +1,15 @@
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+}
+
+header h1 {
+  /*content: url("../images/logo.svg");*/
+}
+
+nav {
+
+}
+
+footer {
+
+}
