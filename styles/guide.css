@@ -2,3 +2,29 @@ dt img {
     width: 2rem;
     height: 2rem;
 }
+
+blockquote {
+    background-color: #d6d4d4;
+    padding: 1rem;
+    border-left: 7px solid #7c7c7c;
+}
+
+q {
+    font-weight: bold;
+}
+
+.my-latin {
+    font-weight: bold;
+    font-style: italic;
+}
+#my-latin[lang] {
+    color: black;
+}
+
+#caution {
+    font-style: italic;
+    background-color: tan;
+    outline: solid;
+    margin: .5rem;
+    padding: .7rem;
+}

@@ -59,8 +59,54 @@
   <main>
     <h2>Join The CSE Cheese Society</h2>
     <!-- main is flex-centering a membership form card -->
-    <p>Main — this region has <code>flex: 1</code>, so it grows to fill whatever height the header and footer leave over.</p>
-    <p>There is barely any content here, yet the footer still sits at the bottom of the viewport. That is the whole trick.</p>
+    <p>Membership is free, meetings are monthly, and the cheese is real. Fill out the form and the Keeper of the Cave will be in touch.</p>
+
+    <button commandfor="join" command="show-modal">Why join?</button>
+    <dialog id="join">
+      <ul>
+        <li>Monthly tastings. The Society buys the cheese. You bring opinions.</li>
+        <li>Voting rights in the Cheese of the Month election.</li>
+        <li>Access to THE CAVE (a mini-fridge, but a very serious one).</li>
+        <li>A laminated membership card featuring the cheese of your choice.</li>
+        <li>Amnesty program for recovering blue-cheese skeptics.</li>
+      </ul>
+
+      <button commandfor="join" command="close">I'm convinced</button>
+    </dialog>
+
+    <form>
+      <fieldset>
+        <legend>Please complete the following form:</legend>
+
+        <label for="name">Name </label>
+        <input type="text" id="name" required/><br>
+
+        <label for="email">Email </label>
+        <input type="text" id="email" required/><br>
+
+        <label for="family-select">Which family calls to you?</label>
+        <select>
+          <option>Fresh</option>
+          <option>Soft-ripened</option>
+          <option>Blue</option>
+          <option>Hard</option>
+          <option>Undecided — that's why I'm here</option>
+        </select><br>
+
+        <label>Which of these have you tasted?</label><br>
+        <input type="checkbox" id="brie" name="brie"/>
+        <label for="brie">Brie</label><br>
+        <input type="checkbox" id="roquefort" name="roquefort"/>
+        <label for="roquefort">Roquefort</label><br>
+        <input type="checkbox" id="gouda" name="gouda"/>
+        <label for="gouda">Aged Gouda</label><br>
+
+        <label for="favorite">Tell us your favorite cheese </label>
+        <input type="text" id="favorite" placeholder="e.g. Comte"/><br>
+
+        <button type="submit">Sign me up</button>
+      </fieldset>
+    </form>
   </main>
 
   <footer>Copyright 2026 <a href="https://github.com/JaneenTai/CSE134_HW4">The CSE Cheese Society</a>. Cheese responsibly.</footer>
