@@ -2,16 +2,10 @@
   @view-transition { navigation: auto; }
 }
 
-header figure {
-  width: 4rem;
-  height: 4rem;
-  /*content: url("../images/logo.svg");*/
-}
-
-nav {
-
-}
-
-footer {
-
+header {
+  figure {
+    width: 3rem;
+    height: 3rem;
+    float: left;
+  }
 }
