@@ -7,10 +7,14 @@ blockquote {
     background-color: #d6d4d4;
     padding: 1rem;
     border-left: 7px solid #7c7c7c;
-}
 
-q {
-    font-weight: bold;
+    q {
+        font-weight: bold;
+    }
+
+    footer {
+        font-style: italic;
+    }
 }
 
 .my-latin {
