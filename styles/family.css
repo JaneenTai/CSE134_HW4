@@ -1,30 +1,42 @@
 body {
-      --figure-width: 11rem;
-      --figure-height: 24rem;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      min-height: 100svh;
 
-      max-width: var(--measure);
-      margin-inline: auto;
-      padding: var(--space-3);
+      > header {
+        grid-area: header;
+        padding: var(--space-2) var(--space-3);
+        border-block-end: var(--border);
+        background: var(--panel);
+      }
 
-      article {
-        figure {
-          float: left;
-          width: var(--figure-width);
-          min-height: var(--figure-height);
-          margin: 0 var(--space-2) var(--space-1) 0;
-          padding: var(--space-2);
-          border: var(--border);
-          background: var(--panel);
-        }
-        p {
-          clear: right;
+      > nav {
+        grid-area: nav;
+        padding: var(--space-2);
+        border-inline-end: var(--border);
+        background: var(--panel);
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
         }
       }
 
+      > main {
+        grid-area: main;
+        padding: var(--space-3);
+      }
+
       > footer {
-        clear: both;
-        padding: var(--space-2);
-        border-block-start: var(--rule);
+        grid-area: footer;
+        padding: var(--space-2) var(--space-3);
+        border-block-start: var(--border);
         background: var(--panel);
       }
 }
