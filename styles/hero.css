@@ -1,0 +1,8 @@
+#hero {
+    max-width: 100%;
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

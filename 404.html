@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="error 404 page"/>
   <title>404</title>
   <link rel="stylesheet" href="./styles/tokens.css">
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/404.css">
   <!--
     FLEX CENTERING
     The body is a flex container filling the viewport (min-height: 100svh).
@@ -13,27 +15,11 @@
     and align-items centers it on the cross axis (vertical) — perfect
     centering in three lines, the problem floats never solved.
   -->
-  <style>
-    body {
-      --card-width: 28rem;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100svh;
-      padding: var(--space-3);
-
-      main {
-        max-width: var(--card-width);
-        padding: var(--space-3);
-        border: var(--border);
-        border-block-start: var(--rule);
-        background: var(--panel);
-      }
-    }
-  </style>
 </head>
 <body>
+  <header></header>
+  <nav></nav>
   <main>
     <h1>404 ERROR</h1>
     <picture>
@@ -41,5 +27,6 @@
     </picture>
     <p>The page you're looking for melted, and can't be found!</p>
   </main>
+  <footer></footer>
 </body>
 </html>

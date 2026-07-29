@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="about the CSE Cheese Society, includes board members"/>
   <title>About</title>
   <link rel="stylesheet" href="./styles/tokens.css">
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/site.css">
+  <link rel="stylesheet" href="./styles/about.css">
   <!--
     FLOAT
     float: left shifts the figure to one side and takes it out of normal
@@ -15,35 +17,6 @@
     clear: both is visible: without it, the footer would slide up and sit
     beside the float; with it, the footer starts below the figure's bottom.
   -->
-  <style>
-    body {
-      --figure-width: 11rem;
-      --figure-height: 24rem;
-
-      max-width: var(--measure);
-      margin-inline: auto;
-      padding: var(--space-3);
-
-      article {
-        figure {
-          float: left;
-          width: var(--figure-width);
-          min-height: var(--figure-height);
-          margin: 0 var(--space-2) var(--space-1) 0;
-          padding: var(--space-2);
-          border: var(--border);
-          background: var(--panel);
-        }
-      }
-
-      > footer {
-        clear: both;
-        padding: var(--space-2);
-        border-block-start: var(--rule);
-        background: var(--panel);
-      }
-    }
-  </style>
 </head>
 <body>
   <header>

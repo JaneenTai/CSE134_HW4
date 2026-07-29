@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="all about hard cheeses"/>
   <title>Hard</title>
   <link rel="stylesheet" href="../styles/tokens.css">
   <link rel="stylesheet" href="../styles/global.css">
   <link rel="stylesheet" href="../styles/site.css">
+  <link rel="stylesheet" href="../styles/hero.css">
   <link rel="stylesheet" href="../styles/family.css">
   <!--
     GRID PAGE SCAFFOLD
@@ -15,37 +17,6 @@
     the page; each region claims its slot with grid-area. Rows are
     auto 1fr auto: natural height at the edges, main takes the rest.
   -->
-  <style>
-    body {
-      display: grid;
-      grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-      grid-template-rows: auto 1fr auto;
-      min-height: 100svh;
-
-      > header {
-        grid-area: header;
-        padding: var(--space-2) var(--space-3);
-        border-block-end: var(--border);
-        background: var(--panel);
-      }
-
-      > main {
-        grid-area: main;
-        padding: var(--space-3);
-      }
-
-      > footer {
-        grid-area: footer;
-        padding: var(--space-2) var(--space-3);
-        border-block-start: var(--border);
-        background: var(--panel);
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -70,20 +41,24 @@
       <img id="hero" src="../images/hero/hard-hero.jpg" alt="hard cheese hero image">
     </figure>
     <h2>Hard cheeses</h2>
-    <p>Aged for months or years, hard cheeses trade moisture for
+    <p>
+
+    </p>
+Aged for months or years, hard cheeses trade moisture for
 concentration. Time breaks proteins into crystals of crunch and deep,
-nutty flavor.</p>
-    <p>Character: dense, granular, sometimes crystalline. Flavors of
+nutty flavor.<br>
+
+<b>Character:</b> dense, granular, sometimes crystalline. Flavors of
 browned butter, broth, and toasted nuts that linger long after the
-bite.</p>
-    <p>Notable members: Parmigiano-Reggiano, aged Gouda, Comte, Manchego,
-and Gruyere.</p>
-    <p>How to enjoy: shave over pasta, break into rough chunks for a board,
+bite.<br>
+<b>Notable members:</b> Parmigiano-Reggiano, aged Gouda, Comte, Manchego,
+and Gruyere.<br>
+<b>How to enjoy:</b> shave over pasta, break into rough chunks for a board,
 or grate the rind into soup — the rind of Parmigiano is a soup
-ingredient, not trash.</p>
-    <p>Did you know? Those crunchy specks in aged Gouda and Parmigiano are
+ingredient, not trash.<br>
+<b>Did you know?</b> Those crunchy specks in aged Gouda and Parmigiano are
 tyrosine and calcium lactate crystals — a sign of long, honest aging,
-not salt.</p>
+not salt.
   </main>
 
   <footer>Copyright 2026 <a href="https://github.com/JaneenTai/CSE134_HW4">The CSE Cheese Society</a>. Cheese responsibly.</footer>

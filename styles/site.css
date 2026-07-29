@@ -9,7 +9,3 @@ header {
     float: left;
   }
 }
-
-h3, p {
-  clear: right;
-}
